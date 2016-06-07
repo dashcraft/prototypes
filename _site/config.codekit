@@ -202,24 +202,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/css\/apmex_master.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/css\/apmex_master.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/css\/landingscss.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/css\/landingscss.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_site\/edu\/edutopica.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -228,171 +210,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/img\/banner-test\/banner-test-bg-1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 662516,
-		"inputAbbreviatedPath": "\/_site\/img\/banner-test\/banner-test-bg-1.png",
-		"outputAbbreviatedPath": "\/_site\/img\/banner-test\/banner-test-bg-1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/banner-test\/test-coin.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.27221e+06,
-		"inputAbbreviatedPath": "\/_site\/img\/banner-test\/test-coin.png",
-		"outputAbbreviatedPath": "\/_site\/img\/banner-test\/test-coin.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/1000x300-hero-banner.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 312884,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/1000x300-hero-banner.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/1000x300-hero-banner.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/181x328-atlantis.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30083,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-atlantis.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-atlantis.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/181x328-death-dealer.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 31025,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-death-dealer.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-death-dealer.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/181x328-egyptian-queen.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30305,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-egyptian-queen.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-egyptian-queen.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/181x328-silver-warrior.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 33418,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-silver-warrior.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-silver-warrior.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/181x328-the-barbarian.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 31979,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-the-barbarian.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-the-barbarian.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/181x328-the-huntress.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 34200,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-the-huntress.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/181x328-the-huntress.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/Landing-Page-Graphic-A.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 276878,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/Landing-Page-Graphic-A.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/Landing-Page-Graphic-A.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/Landing-Page-Graphic-B.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 316594,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/Landing-Page-Graphic-B.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/Landing-Page-Graphic-B.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/deathdealer\/LandingPage-Frank-Frazetta-Mock-up.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.62018e+06,
-		"inputAbbreviatedPath": "\/_site\/img\/deathdealer\/LandingPage-Frank-Frazetta-Mock-up.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/deathdealer\/LandingPage-Frank-Frazetta-Mock-up.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/gmail\/gmail_300x600-inbox_graphic.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 180286,
-		"inputAbbreviatedPath": "\/_site\/img\/gmail\/gmail_300x600-inbox_graphic.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/gmail\/gmail_300x600-inbox_graphic.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/gmail\/Gmail_400x656-Inbox_Graphic.jpeg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 140899,
-		"inputAbbreviatedPath": "\/_site\/img\/gmail\/Gmail_400x656-Inbox_Graphic.jpeg",
-		"outputAbbreviatedPath": "\/_site\/img\/gmail\/Gmail_400x656-Inbox_Graphic.jpeg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/_site\/img\/gmail\/gmail_460x600-inbox_graphic.jpeg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 126962,
-		"inputAbbreviatedPath": "\/_site\/img\/gmail\/gmail_460x600-inbox_graphic.jpeg",
-		"outputAbbreviatedPath": "\/_site\/img\/gmail\/gmail_460x600-inbox_graphic.jpeg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/_site\/index.html": {
 		"fileType": 8192,
@@ -574,15 +391,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_site\/pages\/home_banner_test.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/pages\/home_banner_test.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_site\/pages\/productrecttop.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -609,28 +417,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/scripts\/functions.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/scripts\/functions.js",
-		"outputAbbreviatedPath": "\/_site\/scripts\/min\/functions-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_site\/scripts\/min\/functions-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/scripts\/min\/functions-min.js",
-		"outputAbbreviatedPath": "\/_site\/scripts\/min\/min\/functions-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		},
 	"\/basiclayout.html": {
 		"fileType": 8192,

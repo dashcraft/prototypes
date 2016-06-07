@@ -18,6 +18,9 @@
 .content-zone
   +span(65.33%)
 
+.page-header h1
+  padding: 10px 0
+
 // = = = = 2. Side Nav = = = = //
 .side-nav-menu
   margin: 0
@@ -43,7 +46,6 @@
 
     &.active
       color: $apmex-green
-      font-weight: bold
       border-right-color: $apmex-green
       transition: all 180ms ease-in-out
 
@@ -221,3 +223,23 @@
     padding: 17px 0
     text-indent: 10px
     background: white
+
+
+
+.glossary-list
+  margin-bottom: 21px
+
+  dt
+    display: block
+    margin-bottom: 10px
+    font-size: 16px
+
+  dd
+    display: block
+    padding-bottom: 10px
+    font-size: 14px
+    line-height: 21px
+
+  dd:after
+    border-bottom: 1px solid $borderColor
+    padding-top: 10px

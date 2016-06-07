@@ -1,0 +1,223 @@
+// Side Nav
+// = = = = = = = = = = = = = = = = = //
+// APMEX - Stewart Hines | June 2016
+// = = = = = = = = = = = = = = = = = //
+
+// = = = = 1. Basic Layout = = = = //
+
+.has-side-nav
+  +section()
+
+.content-block
+  +group()
+
+.side-nav
+  +span(30.66%)
+  margin-left: 0
+
+.content-zone
+  +span(65.33%)
+
+// = = = = 2. Side Nav = = = = //
+.side-nav-menu
+  margin: 0
+  padding: 0
+  list-style: none
+  border: 1px solid $apmex-lightGray
+  border-radius: 4px
+
+  a,
+  span
+    display: block
+    padding: 8px
+    color: $apmex-blue
+    font-size: 18px
+    border-right: 15px solid transparent
+    box-shadow: 0 1px 0 0 $apmex-lightGray
+    transition: all 180ms ease-in-out
+    cursor: pointer
+
+    &:hover
+      color: $apmex-orange
+      transition: all 180ms ease-in-out
+
+    &.active
+      color: $apmex-green
+      font-weight: bold
+      border-right-color: $apmex-green
+      transition: all 180ms ease-in-out
+
+  li:first-child a
+    border-top-right-radius: 4px
+
+  li:last-child a
+    border-bottom-right-radius: 4px
+
+// = = = = 3. Sub Nav Menu = = = = //
+.side-nav-sub-menu
+  background: #F3F3F3
+  max-height: 0
+  overflow: hidden
+  padding: 0
+  list-style: none
+  transition: max-height 250ms ease-in-out
+  border:
+    top: none
+    bottom: none
+
+  a
+    color: $apmex-orange
+    font-size: 14px
+    line-height: 21px
+    border: none
+    box-shadow: none
+
+.side-nav-sub-menu.show
+  border:
+    top: 1px solid $apmex-lightGray
+    bottom: 1px solid $apmex-lightGray
+  max-height: 350px
+  overflow-y: scroll
+  transition: max-height 250ms ease-in-out
+
+.item-test
+  position: relative
+  height: 376px
+  width: 725px
+
+.item-test-bg
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  z-index: 10
+  background:
+    repeat: no-repeat
+    size: cover
+
+.item-wrapper
+  position: relative
+  z-index: 20
+  display: flex
+  height: 375px
+  padding: 40px
+  font-size: 18px
+
+.left,
+.right
+  flex: 1
+  flex-align: center
+  align-items: center
+  align-content: center
+  align-self: center
+  justify-content: center
+  text-align: center
+
+.item-title h3
+  font-size: 32px
+  font-weight: bold
+  color: white
+
+// = = = = . Page Header = = = = //
+
+.page-header h1
+  font-size: 25px
+  color: $apmex-green
+
+// = = = = . Contact Form = = = = //
+
+.ccc-contact-form
+  display: block
+  background: #F3F3F3
+  padding: $spacingBase
+  border: 1px solid $borderColor !important
+  border-radius: 4px
+  margin-bottom: $spacingLG
+
+  .form-control
+    border-radius: 4px
+    outline: none
+    border: 1px solid $borderColor !important
+    padding: 8px 0
+    text-indent: 10px
+    background: white
+
+.form-group
+  +group()
+
+.form-control-inline
+  +span(48%)
+  margin-top: 0 !important
+  margin-bottom: 0 !important
+
+// = = = = . Button Green = = = = //
+.btn.btn-green
+  background: $apmex-green
+  color: white
+  transition: background 180ms ease-in-out
+
+  &:hover
+    background: lighten($apmex-green, 10%)
+    transition: background 180ms ease-in-out
+
+// = = = = . Contact Groups (Layout) = = = = //
+
+.ccc-page-header,
+.contact-group,
+.article-group
+  +group()
+  +spacing()
+  padding-bottom: $spacingBase
+  border-bottom: 1px solid $apmex-lightGray
+
+  h3
+    font-size: 23px
+    line-height: 25px
+
+  address
+    margin: 0 !important
+
+  .btn
+    font-size: 14px
+    +span(30.66%)
+
+  .btn.btn-block
+    +span(100%)
+
+.ccc-page-header
+  padding-bottom: 0
+  .btn
+    display: inline-block
+    width: 100%
+    padding: 8px 0
+    +spacing()
+
+.contact-group:last-child,
+.article-group:last-child
+  border-bottom: 0
+
+.text-large
+  font-size: 18px
+
+.form-prefix
+  position: relative
+  margin-bottom: $spacingBase
+
+  .form-control-btn
+    position: absolute
+    top: 0
+    right: 0
+    color: white
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    border-color: transparent
+    background: $apmex-green
+
+  .form-control
+    border-radius: 4px
+    outline: none
+    border: 1px solid $borderColor !important
+    padding: 17px 0
+    text-indent: 10px
+    background: white

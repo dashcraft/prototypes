@@ -1,0 +1,237 @@
+---
+layout: default
+---
+<style>
+  /* = = = = Featured List = = = = = */
+  /* NOTE: This behaves like a grid system */
+
+  .featured-list,
+  .promo-content {
+      display:block;
+      width: 100%;
+      clear: both;
+      padding: 0px;
+      margin: 40px 0;
+  }
+
+  .featured-list:before,
+  .featured-list:after {
+      content: "";
+      display: table;
+  }
+
+  .featured-list:after {
+      clear: both;
+  }
+
+  .featured-list {
+      zoom: 1;
+  }
+  /* = = = = Featured Item = = = = */
+
+  .featured-item {
+      display: block;
+      text-align:center;
+      float: left;
+      width: 32%;
+  }
+
+  .featured-item:first-child {
+      margin-left: 0;
+  }
+
+  .featured-item img{
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .feature-item-title{
+    display:block;
+    width:80%;
+    margin-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    color:#002539;
+    font-size:21px;
+    font-weight:900;
+  }
+
+  /* = = = = Featured Item CTA = = = = */
+  .featured-item-cta{
+    display:inline-block;
+    width:60%;
+    padding:12px 20px;
+    color:white;
+    font-size:16px;
+    font-weight:900;
+    background:#f98d29;
+    transition: all ease-in-out 300ms
+  }
+  .featured-item-cta:hover{
+    color:white;
+    background:#ffb057;
+    transform: translate(0px, -5px) scale(1.02);
+    transition: all ease-in-out 250ms
+  }
+
+  /*= = = = Promo Content = = = =*/
+
+  .promo-col {
+      float: left;
+      display: block;
+  }
+
+  /*= = = = Rules Section = = = =*/
+  .rules-section {
+     margin: 40px 0;
+     border-bottom: 1px solid #002539;
+  }
+
+  .rules-section-title .collapsed:after {
+      content: '+';
+      top: -7px;
+  }
+
+  .rules-section-title a:after {
+      color: #082537;
+      font-size: 32px;
+      content: '–';
+      float: right;
+      position: relative;
+      top: -10px;
+  }
+  .collapse-title{
+    margin-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #25a187;
+    font-size: 25px;
+    position: relative;
+  }
+  .collapse-body{
+    font-size:13px;
+    line-height:20px;
+  }
+</style>
+
+<div id="deathDealer">
+    <div class="top-banner">
+        <img alt="Frank Frazetta Legacy Collection Six-Piece Silver Statue Set" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/1000x300-hero-banner.jpg" width="1000" height="300" />
+    </div>
+    <div class="featured-list">
+      <div class="featured-item">
+          <img src="http://www.images-apmex.com/images/Catalog%20Images/Products/97339_Slab.jpg?v=20160513030411&width=900&height=900" alt="" class="featured-item-img">
+          <div class="featured-item-content">
+            <a class="feature-item-title" href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">6 oz Antique Silver: Death Dealer</a>
+            <a href="#" class="btn featured-item-cta">Add To Cart</a>
+          </div>
+          <a href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">
+              <img alt="6 oz Antique Silver: Death Dealer" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-death-dealer.jpg" />
+          </a>
+      </div>
+      <div class="featured-item">
+          <img src="http://www.images-apmex.com/images/Catalog%20Images/Products/97339_Slab.jpg?v=20160513030411&width=900&height=900" alt="" class="featured-item-img">
+          <div class="featured-item-content">
+            <a class="feature-item-title" href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">6 oz Antique Silver: Silver Warrior</a>
+            <a href="#" class="btn featured-item-cta">Add To Cart</a>
+          </div>
+          <a href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">
+              <img alt="6 oz Antique Silver: Death Dealer" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-death-dealer.jpg" />
+          </a>
+      </div>
+      <div class="featured-item">
+          <img src="http://www.images-apmex.com/images/Catalog%20Images/Products/97339_Slab.jpg?v=20160513030411&width=900&height=900" alt="" class="featured-item-img">
+          <div class="featured-item-content">
+            <a class="feature-item-title" href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">6 oz Antique Silver: Death Dealer</a>
+            <a href="#" class="btn featured-item-cta">Add To Cart</a>
+          </div>
+          <a href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">
+              <img alt="6 oz Antique Silver: Death Dealer" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-death-dealer.jpg" />
+          </a>
+      </div>
+        <!-- <div class="featured-item">
+
+            <a href="http://www.apmex.com/product/97339/6-oz-silver-antique-statue-frank-frazetta-death-dealer-lll">
+                <img alt="6 oz Antique Silver: Death Dealer" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-death-dealer.jpg" />
+            </a>
+        </div> -->
+        <!-- <div class="featured-item">
+            <a href=" http://www.apmex.com/product/97338/8-oz-silver-antique-statue-frank-frazetta-silver-warrior">
+                <img alt="6 oz Antique Silver: Silver Warrior" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-silver-warrior.jpg" />
+            </a>
+        </div>
+        <div class="featured-item">
+            <a href="http://www.apmex.com/product/97595/6-oz-silver-antique-statue-frank-frazetta-the-barbarian">
+                <img alt="6 oz Antique Silver: The Barbarian" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-the-barbarian.jpg" />
+            </a>
+        </div> -->
+    </div>
+
+    <div class="featured-list">
+      <div class="featured-item">
+          <a href="http://www.apmex.com/product/97599/4-oz-silver-antique-statue-frank-frazetta-atlantis">
+              <img alt="6 oz Antique Silver: Atlantis" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-atlantis.jpg" />
+          </a>
+      </div>
+
+      <div class="featured-item">
+          <a href="http://www.apmex.com/product/97596/6-oz-silver-antique-statue-frank-frazetta-the-huntress">
+              <img alt="6 oz Antique Silver: The Huntress" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-the-huntress.jpg" />
+          </a>
+      </div>
+      <div class="featured-item">
+          <a href="http://www.apmex.com/product/97341/6-oz-silver-antique-statue-frank-frazetta-egyptian-queen">
+              <img alt="6 oz Antique Silver: Egyptian Queen" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/181x328-egyptian-queen.jpg" />
+          </a>
+      </div>
+    </div>
+
+    <div class="promo-content">
+        <div class="promo-col">
+            <img alt="Atlantis Silver Statue" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/Landing-Page-Graphic-A.jpg" width="499" height="789" />
+        </div>
+        <div class="promo-col">
+            <a href="http://www.apmex.com/category/90409/frank-frazetta-statues-rounds">
+                <img alt="Captain America fine silver coins" src="http://testimages.apmex.com/Content/cms/Landing%20Pages/Frank%20Frazetta/Landing-Page-Graphic-B.jpg" width="501" height="789" />
+            </a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="rules-section">
+        <h3 class="rules-section-title"><a class="collapsed collapse-title" href="#officialrules" data-toggle="collapse">Official Rules</a></h3>
+        <div id="officialrules" class="panel-collapse collapse" style="height: 0px;">
+            <div class="collapse-body">
+              <p><strong>THE OFFICIAL FRANK FRAZETTA SILVER STATUE SWEEPSTAKES RULES</strong></p>
+              <p><strong>SWEEPSTAKES IS OPEN TO ALL PERSONS WHO ARE LEGAL U.S. RESIDENTS AND ARE AGE 21 OR OLDER. THIS SWEEPSTAKES IS VOID WHERE PROHIBITED. SWEEPSTAKES STARTS MAY 25, 2016 AND ENDS JUNE 26, 2016 AT MIDNIGHT (ET).</strong><br /> </p>
+              <p><strong>PRIZE DETAILS</strong></p>
+              <ol>
+              <li>In the Frank Frazetta Silver Statue Sweepstakes (the &ldquo;Contest&rdquo;), one winner will receive one (1) six-piece set of Frank Frazetta Silver Statues, totaling 36 oz of Silver.</li>
+              <li><strong>How to Enter: </strong><br />No purchase is required to participate in the Contest.</li>
+              </ol>
+              <p>Beginning <strong>MAY 25, 2016, </strong>when a person orders any eligible Frank Frazetta Collection product, including Silver statues, Silver rounds and Copper rounds, through www.APMEX.com, or orders these products from APMEX by telephone, he or she will automatically be entered into the Contest. Purchases made on eBay do not qualify for entry into the Contest.</p>
+              <p>However, no purchase is required to enter, so in lieu of purchasing an eligible Frank Frazetta product, you may fill out this online entry form, providing your name, phone number and a valid email address. You may also send us a 3&rdquo;x 5&rdquo; note card with this information. Mail-in entries must be received no later than JUNE 26, 2016. One online entry <strong>or</strong> mail-in entry per household. All entrant-provided email addresses may be collected by APMEX for promotional use. Send your entry to:</p>
+              <p>Silver Statue Sweepstakes<br />APMEX <br />226 Dean A. McGee <br />Oklahoma City, OK 73102</p>
+              <p>APMEX will not be responsible for incomplete, lost, late, damaged, illegible or misdirected entries. The Prize will be selected at random from all eligible entries.</p>
+              <p>Except as provided in Rules 6 and 7, the Contest is open to all persons who are 21 years of age or older and are legal residents of the United States and are currently residing in the United States.</p>
+              <ol start="3">
+              <li>The winner will be selected the week of <strong>JUNE 27, 2016</strong>, chosen from among all eligible entries received. The winner will be notified by telephone or email. Return of any Prize/Prize notification as undeliverable will result in disqualification of that winner and the selection of another winner by APMEX.</li>
+              <li>APMEX is entitled to make all decisions with respect to the application and/or the interpretation of these rules and the conduct of the Contest. Any decision of APMEX relating to the interpretation or application of these rules or the conduct of the Contest shall be final.</li>
+              <li>Prizes may be taxable by the Internal Revenue Service and other tax authorities. The winner will be responsible for taxes payable to the Internal Revenue Service or any other tax authority. APMEX is not liable for any of such taxes.</li>
+              <li>The Prize consists of one (1) six-piece set of Silver Frank Frazetta Statues. The complete set is valued at $1,699.99 USD. Each Prize consists of only those items specifically listed as part of the prize and specifically excludes anything else.</li>
+              <li>The Contest is open to all individuals age 21 years or older at the time of entry. Employees of APMEX, the Heads or Tales Coin Co., their subsidiaries, advertising and promotion agencies, or partners and their immediate family members (spouse, parents, siblings and children), and/or those living in the same household of each, are not eligible. If it is found that a person who does not meet the eligibility criteria set forth in these rules has submitted an entry, that entry will be deemed ineligible and the person will not be eligible to receive the Prize.</li>
+              <li>The Contest is not open to residents residing outside of the United States. The Contest is subject to all federal, state and local laws and is void where restricted, taxed or prohibited by law.</li>
+              <li>APMEX reserves the right to disqualify any entries for any error in the transmission of online entries.</li>
+              <li>No substitution or transfer of the Prize is permitted, except that APMEX reserves the right to substitute a prize of equal or lesser value in the event that the Prize is unavailable.</li>
+              <li>Acceptance of a Prize constitutes permission to APMEX to use a winner's first name, state of residence and/or likeness for any promotional, advertising or Internet usage for an indefinite period without further compensation unless prohibited by law. All materials are the sole property of APMEX and will not be returned.</li>
+              <li>By accepting a Prize, the winner agrees to defend, indemnify and hold harmless APMEX and the Heads or Tales Coin Co., and their respective directors, officers, agents, employees, affiliates and assigns, from and against any and all claims, loss, expense, damage and/or liability, including, without limitation, reasonable attorneys&rsquo; fees arising from, or in connection with, the Contest and the use or non-use of the Prize. The winner assumes all liability for any injury, loss or damage caused or claimed to be caused by participation in the Frank Frazetta Silver Statue Sweepstakes or use of the Prize.</li>
+              <li>By participating in the Frank Frazetta Silver Statue Sweepstakes, entrants agree to be bound by these Official Rules and any interpretation or application thereof by APMEX.</li>
+              <li>APMEX reserves the right to change the Official Rules or terminate the Contest without notice. If, for any reason, the Contest is not capable of running as planned (including, but not limited to, infection by computer virus, bugs, tampering or unauthorized intervention, fraud, technical failure or any other causes which corrupt or affect the administration, security, fairness, integrity or proper conduct of this Contest), APMEX reserves the right at their individual sole discretion to cancel, terminate, modify or suspend the Contest.</li>
+              <li>APMEX shall not be responsible for any typographical or other error in the printing of the offer, administration of the Contest or in the announcement of the Prize.</li>
+              <li>A winner&rsquo;s list will be available by sending a request to: APMEX &ndash; Silver Statue Sweepstakes Winners List, 226 Dean A. McGee, Oklahoma City, Oklahoma, 73102. All requests for the winners list must be received by JUNE 26, 2016.</li>
+              <li>This Contest is sponsored by APMEX, Inc., 226 Dean A. McGee, Oklahoma City, Oklahoma, 73102.</li>
+              </ol>
+            </div>
+        </div>
+    </div>
+</div>

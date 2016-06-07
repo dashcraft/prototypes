@@ -1,0 +1,334 @@
+---
+layout: default
+---
+<style>
+
+    /** flowplayer starts here **/
+
+    .flowplayer * {
+        cursor: default !important;
+    }
+    /* flexible width for the fancybox wrapper */
+
+    .fancybox-wrap {
+        /*width: 80% !important;*/
+        width: 50% !important;
+        margin: -135px 0 0 0;
+    }
+
+    .fancybox-close {
+        top: -10px;
+        right: -12px;
+    }
+
+    .fancybox-skin {
+        background-color: #000000;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+    .fancybox-opened .fancybox-skin {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .flowplayer .fp-context-menu {
+        display: none;
+    }
+
+    .flowplayer .fp-fullscreen {
+        left: -8px;
+    }
+
+    .fancybox-lock .fancybox-overlay {
+        overflow: auto;
+    }
+
+    #fancybox-loading div {
+        width: 50%;
+        height: 50%;
+        background-color: #000000;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+    .fancybox-lock {
+        margin-right: 0 !important;
+    }
+
+    .oktaxfree-metals-selection {
+        margin: 40px 0px 0px 0px;
+    }
+
+    .oktaxfree-category {
+        float: left;
+        width: 222px;
+        margin: 0px 0px 70px 0px;
+        padding: 0px 25px 0px 25px;
+        text-align: center;
+    }
+
+    .oktaxfree-category p {
+        font-size: 12px;
+        height: 95px;
+    }
+
+    @media (max-width: 767px) {
+        .oktaxfree-category {
+            width: 100%;
+        }
+        .oktaxfree-category p {
+            height: initial;
+        }
+        .left-col,
+        .right-col {
+            float: none;
+            width: 100%;
+            padding-right: 0px;
+        }
+    }
+
+/* = = = = = = = = = = = = = = = = = = */
+
+    section{
+      color:#878787;
+      font-weight:300;
+    }
+
+    .section {
+    	clear: both;
+    	padding: 0px;
+    	margin: 0px;
+    }
+
+    /*  COLUMN SETUP  */
+    .col {
+    	display: block;
+    	float:left;
+    	margin:0;
+    }
+    .col:first-child { margin-left: 0; }
+
+    /*  GROUPING  */
+    .group:before,
+    .group:after { content:""; display:table; }
+    .group:after { clear:both;}
+    .group { zoom:1; /* For IE 6/7 */ }
+
+
+    /*  GRID OF TWO  */
+    .span_2_of_2 {
+    	width: 100%;
+    }
+    .span_1_of_2 {
+    	width: 47%;
+    }
+
+    .col-left{
+      width:60%;
+      padding-right:6%;
+    }
+    .col-left img{
+      max-width:400px;
+      margin:0 auto;
+      text-align:center;
+    }
+    .col-right{
+      width:40%;
+
+    }
+    .st0{fill:#25A186;}
+
+    /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+    @media only screen and (max-width: 480px) {
+    	.col {
+    		margin: 1% 0 1% 0%;
+    	}
+    }
+
+    @media only screen and (max-width: 480px) {
+    	.span_2_of_2, .span_1_of_2 { width: 100%; }
+    }
+
+
+
+  .spacing-base{
+    margin-bottom:21px;
+  }
+
+  h3.promo-header {
+    font-weight:bold;
+    color:#25A186;
+    vertical-align: middle;
+  }
+
+  .icon-circle-arrow{
+    display:inline-block;
+    vertical-align: middle;
+    margin-bottom:11px;
+    width:18px;
+    max-width:18px;
+  }
+
+  .page-title{
+    padding-top:30px;
+  }
+
+  .promo-header{
+    display:inline-block;
+  }
+
+  .promo{
+    margin-bottom:5%;
+  }
+
+  .promo-list{
+    padding-left:16px;
+  }
+
+  .promo-list li{
+
+    margin-bottom:10px;
+  }
+
+  .popupvideo{
+    margin-bottom:2%;
+  }
+</style>
+<section class="section">
+  <h1 class="page-title">
+    Check Your Email Account
+  </h1>
+  <div class="group spacing-base">
+    <div class="col span_2_of_2">
+      <p>
+        Follow the steps below to easily adjust your email settings so you don’t miss out on exclusive offers,  flash sales, market alerts and more from APMEX News.
+      </p>
+    </div>
+  </div>
+  <div class="group spacing-base">
+    <div class="col col-left">
+      <div class="promo">
+        <header class="promo-header">
+          <div class="icon-circle-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <style>
+                .st0{fill:#25A186;}
+              </style>
+              <path class="st0" d="M75.6 52.1c.1-.1.1-.2.2-.3.1-.1.1-.2.1-.3 0-.1.1-.1.1-.2v-.1c0-.1.1-.2.1-.3 0-.1.1-.2.1-.3 0-.1 0-.2.1-.3v-1.5c0-.1-.1-.2-.1-.3 0-.1 0-.2-.1-.3v-.1c0-.1-.1-.1-.1-.2s-.1-.2-.1-.2c-.1-.1-.1-.2-.2-.3 0-.1-.1-.2-.2-.2-.1-.1-.2-.2-.2-.3l-.1-.1-19.6-19.4c-1.6-1.6-4.3-1.6-5.9 0-1.6 1.6-1.6 4.3 0 5.9l12.4 12.4H23.5c-1.4 0-2.7.7-3.5 1.8-.5.7-.7 1.5-.7 2.3 0 1.1.5 2.2 1.2 2.9.8.8 1.8 1.2 2.9 1.2H62L49.7 66.4c-1.6 1.6-1.6 4.3 0 5.9.8.8 1.9 1.2 2.9 1.2 1.1 0 2.1-.4 2.9-1.2L75 52.8l.1-.1c.1-.1.2-.2.2-.3.2-.1.3-.2.3-.3z"/>
+              <path class="st0" d="M50.4.7C23.3.7 1.3 22.7 1.3 49.8s22 49.1 49.1 49.1 49.1-22 49.1-49.1S77.5.7 50.4.7zm0 91c-23.1 0-41.9-18.8-41.9-41.9 0-23.1 18.8-41.9 41.9-41.9 23.1 0 41.9 18.8 41.9 41.9 0 23.1-18.8 41.9-41.9 41.9z"/>
+            </svg>
+          </div>
+          <h3 class="promo-header">
+            Move Emails Out Of Spam:
+          </h3>
+        </header>
+        <div class="promo-body">
+          <ol class="promo-list">
+            <li>Log into your Gmail account.</li>
+            <li>Locate your spam folder on the left-hand side.</li>
+            <li>Click into your spam folder and search for an email from "APMEX News."</li>
+            <li>Open your "APMEX News" email and click the "Not Spam" button located at the top of your email account.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="promo">
+        <header class="promo-header">
+          <h3 class="promo-header">
+            <div class="icon-circle-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <style>
+                  .st0{fill:#25A186;}
+                </style>
+                <path class="st0" d="M75.6 52.1c.1-.1.1-.2.2-.3.1-.1.1-.2.1-.3 0-.1.1-.1.1-.2v-.1c0-.1.1-.2.1-.3 0-.1.1-.2.1-.3 0-.1 0-.2.1-.3v-1.5c0-.1-.1-.2-.1-.3 0-.1 0-.2-.1-.3v-.1c0-.1-.1-.1-.1-.2s-.1-.2-.1-.2c-.1-.1-.1-.2-.2-.3 0-.1-.1-.2-.2-.2-.1-.1-.2-.2-.2-.3l-.1-.1-19.6-19.4c-1.6-1.6-4.3-1.6-5.9 0-1.6 1.6-1.6 4.3 0 5.9l12.4 12.4H23.5c-1.4 0-2.7.7-3.5 1.8-.5.7-.7 1.5-.7 2.3 0 1.1.5 2.2 1.2 2.9.8.8 1.8 1.2 2.9 1.2H62L49.7 66.4c-1.6 1.6-1.6 4.3 0 5.9.8.8 1.9 1.2 2.9 1.2 1.1 0 2.1-.4 2.9-1.2L75 52.8l.1-.1c.1-.1.2-.2.2-.3.2-.1.3-.2.3-.3z"/>
+                <path class="st0" d="M50.4.7C23.3.7 1.3 22.7 1.3 49.8s22 49.1 49.1 49.1 49.1-22 49.1-49.1S77.5.7 50.4.7zm0 91c-23.1 0-41.9-18.8-41.9-41.9 0-23.1 18.8-41.9 41.9-41.9 23.1 0 41.9 18.8 41.9 41.9 0 23.1-18.8 41.9-41.9 41.9z"/>
+              </svg>
+            </div>
+            Move Emails To Gmail Primary Tab:
+          </h3>
+        </header>
+        <div class="promo-body">
+          <p>Click the play button to watch the short video on how to move your email messages.</p>
+          <img class="popupvideo" alt="" src="http://www.images-apmex.com/content/images/marketing/gmail/Gmail-video-banner.jpg" height="256" width="428" />
+        </div>
+      </div>
+      <div class="promo">
+        <header class="promo-header">
+          <h3 class="promo-header">
+            <div class="icon-circle-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <style>
+                  .st0{fill:#25A186;}
+                </style>
+                <path class="st0" d="M75.6 52.1c.1-.1.1-.2.2-.3.1-.1.1-.2.1-.3 0-.1.1-.1.1-.2v-.1c0-.1.1-.2.1-.3 0-.1.1-.2.1-.3 0-.1 0-.2.1-.3v-1.5c0-.1-.1-.2-.1-.3 0-.1 0-.2-.1-.3v-.1c0-.1-.1-.1-.1-.2s-.1-.2-.1-.2c-.1-.1-.1-.2-.2-.3 0-.1-.1-.2-.2-.2-.1-.1-.2-.2-.2-.3l-.1-.1-19.6-19.4c-1.6-1.6-4.3-1.6-5.9 0-1.6 1.6-1.6 4.3 0 5.9l12.4 12.4H23.5c-1.4 0-2.7.7-3.5 1.8-.5.7-.7 1.5-.7 2.3 0 1.1.5 2.2 1.2 2.9.8.8 1.8 1.2 2.9 1.2H62L49.7 66.4c-1.6 1.6-1.6 4.3 0 5.9.8.8 1.9 1.2 2.9 1.2 1.1 0 2.1-.4 2.9-1.2L75 52.8l.1-.1c.1-.1.2-.2.2-.3.2-.1.3-.2.3-.3z"/>
+                <path class="st0" d="M50.4.7C23.3.7 1.3 22.7 1.3 49.8s22 49.1 49.1 49.1 49.1-22 49.1-49.1S77.5.7 50.4.7zm0 91c-23.1 0-41.9-18.8-41.9-41.9 0-23.1 18.8-41.9 41.9-41.9 23.1 0 41.9 18.8 41.9 41.9 0 23.1-18.8 41.9-41.9 41.9z"/>
+              </svg>
+            </div>
+            What's Next?
+          </h3>
+          <div class="promo-body">
+            <p>Once you have completed the easy steps, click the button below to confirm and be entered for a chance to win free Silver!</p>
+            <a href="http://www.apmex.com/gmailaccount" class="btn btn-orange">Confirm Here</a>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="col col-right" style="">
+      <img src="http://testimages.apmex.com/Content/cms/landing_pages/gmail/Gmail_400x656-Inbox_Graphic.jpeg" alt="Don't Miss Out!">
+    </div>
+  </div>
+  <p>But don’t stop there! To ensure proper delivery of APMEX News emails, add <a href="mailto:news@goldandsilver.apmex.com">news@goldandsilver.apmex.com</a> to your address book and you will continue to receive personalized offers, exclusive discounts, market alerts and more from APMEX direct to your inbox.
+</p>
+  <hr class="promo-divider">
+</section>
+
+
+
+
+<div class="oktaxfree-metals-selection">
+    <h2>Shop Our Popular Products</h2>
+    <div class="oktaxfree-wrapper" style="margin:0 auto; max-width:888px;">
+      <div class="oktaxfree-category">
+          <a href="/category/10000/gold" target="_blank"><img alt="Gold" src="http://www.images-apmex.com/content/images/content/Gold_Eagle.jpg?v1" style="margin-left: -5px;" height="224" width="184" /></a>
+          <h2>Gold</h2>
+          <p>Gold American Eagles, Gold Canadian Maple Leafs, Gold South African Krugerrands, Gold PAMP Suisse Bars and more.</p>
+          <a class="btn btn-orange" href="/category/10000/gold" target="_blank">Shop Now</a></div>
+      <div class="oktaxfree-category">
+          <a href="/category/20000/silver" target="_blank"><img alt="Silver" src="http://www.images-apmex.com/content/images/content/Silver_Eagle.jpg" style="margin-left: -5px;" height="224" width="184" /></a>
+          <h2>Silver</h2>
+          <p>Silver Canadian Maple Leafs, Silver American Eagles, Silver Austrian Philharmonics, PAMP Suisse Silver Bars, Sunshine Silver Rounds and more.</p>
+          <a class="btn btn-orange" href="/category/20000/silver" target="_blank">Shop Now</a></div>
+      <div class="oktaxfree-category">
+          <a href="/category/30000/platinum" target="_blank"><img alt="Platinum" src="http://www.images-apmex.com/content/images/content/Plat_Palladium_PAMP.jpg" style="margin-left: -5px;" height="224" width="184" /></a>
+          <h2 style="margin-left: -10px;">Platinum</h2>
+          <p>PAMP Suisse Platinum Bars, Platinum American Eagles, Platinum Austrian Philharmonics and more</p>
+          <a class="btn btn-orange" href="/category/30000/platinum" target="_blank">Shop Now</a></div>
+      <div class="oktaxfree-category">
+          <a href="/category/52000/u-s-numismatic-coins-currency" target="_blank"><img alt="Collectibles" src="http://www.images-apmex.com/content/images/content/OtherItems.jpg" height="224" width="184" /></a>
+          <h2>Collectibles</h2>
+          <p>Morgan Silver Dollars, Pre-33 U.S. Gold, U.S. Mint Sets and more.</p>
+          <a class="btn btn-orange" href="/category/52000/u-s-numismatic-coins-currency" target="_blank">Shop Now</a>
+        </div>
+    </div>
+</div>
+<p>
+    <script type="text/javascript">
+        // <![CDATA[
+        $(document).ready(function() {
+            $('.popupvideo').click(function() {
+                $.fancybox({
+                    'width': '50%',
+                    'height': '50%',
+                    'fitToView': false,
+                    'autoSize': false,
+                    'type': 'iframe',
+                    'href': 'http://player.vimeo.com/video/162090919?autoplay=1'
+                });
+            });
+        });
+        // ]]>
+    </script>
+</p>

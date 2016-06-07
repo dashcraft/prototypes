@@ -1,0 +1,77 @@
+// Config
+// = = = = = = = = = = = = = = = = = //
+// APMEX - Stewart Hines | May 2016
+// = = = = = = = = = = = = = = = = = //
+
+$apmex-darkGray: #878787
+$apmex-lightGray: #dddddd
+$apmex-blue: #002539
+$apmex-yellow: #fcb424
+$apmex-orange: #f98d29
+$apmex-green: #24a186
+
+$borderColor: #C3C3C3
+
+$spacingSM: 16px
+$spacingBase: 24px
+$spacingLG: 48px
+
+$gutterSpace: 4%
+$maxGridWidth: 1000px
+
+=section()
+  clear: both
+  padding: 0px
+  margin: 0px
+  width: 100%
+  max-width: $maxGridWidth
+
+=group()
+  zoom: 1
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=col()
+  display: block
+  float: left
+  margin: 0 0 0 $gutterSpace
+
+  &:first-child
+    margin-left: 0
+
+=span($varSpanWidth: 100%, $varSpanMDWidth: 100%)
+  +col()
+  width: $varSpanWidth
+  // Medium Screens
+  @media screen and (max-width: 768px)
+    width: $varSpanMDWidth
+    margin-left: 0
+  // Small Screens
+  @media screen and (max-width: 480px)
+    width: 100%
+    margin-left: 0
+
+=spacing($varSpacing: $spacingBase)
+  margin-bottom: $varSpacing
+
+=formControl()
+  border-radius: 4px
+  outline: none
+  border: 1px solid $borderColor !important
+  padding: 8px 0
+  text-indent: 10px
+  background: white
+
+=btnBase()
+  position: absolute
+  top: 0
+  right: 0
+  color: white
+  border-top-left-radius: 0
+  border-bottom-left-radius: 0
+  border-color: transparent
+  background: $apmex-green

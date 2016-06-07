@@ -1,0 +1,70 @@
+// Accordion Styles
+// = = = = = = = = = = = = = = = = = //
+// APMEX - Stewart Hines | May 2016
+// = = = = = = = = = = = = = = = = = //
+
+// = = = = 1. Basics = = = = //
+.accordion
+  font-size: 14px
+  line-height: 1.5
+  background: white
+
+  .accordion-menu
+    @extend %list-nostyle
+  a
+    position: relative
+    display: block
+    padding: 7px 0
+    width: 100%
+    color: $apmex-darkGray
+    font-weight: normal
+    transition: color 180ms ease-in-out
+    &:hover
+      color: $apmex-orange
+      text-decoration: none
+      transition: color 180ms ease-in-out
+
+// = = = = 2. Links = = = = //
+.accordion-li
+  .accordion-target
+    padding: 12px 0
+    background: white
+    border-bottom: 1px solid $apmex-lightGray
+    text-decoration: none
+    font-weight: normal
+    transition: all 180ms ease-in-out
+    &:hover
+      text-decoration: none
+    &.active
+      font-weight: bolder
+      color: $apmex-orange
+      border-bottom: 2px solid $apmex-lightGray
+      transition: all 180ms ease-in-out
+      .target-indicator
+        font-size: 18px
+        line-height: 1
+
+    .target-indicator
+      position: absolute
+      right: 10px
+
+// = = = = 3. Sub Menus = = = = //
+.accordion-sub
+  @extend %list-nostyle
+  padding: 0 10px 0 14px
+  max-height: 200px
+  overflow: hidden
+  overflow-y: scroll
+  background: #f6f6f6
+  // border-bottom: 1px solid #f0f0f0
+  // border-left: 1px solid #f0f0f0
+  &::-webkit-scrollbar-thumb
+    background-color: $apmex-green !important
+    outline: 20px solid $apmex-green !important
+
+  li:first-child a
+    padding-top: 14px
+
+  a.active
+    color: $apmex_orange
+    text-decoration: none

@@ -1,0 +1,898 @@
+---
+layout: default
+---
+<main class="page-content">
+    <div class="page-container" >
+        <div class="page-content-main">
+
+
+
+<style>
+    .carousel-inner > .item {
+        -webkit-transition: .8s ease-in-out left;
+        -moz-transition: .8s ease-in-out left;
+        -o-transition: .8s ease-in-out left;
+        transition: .8s ease-in-out left;
+    }
+
+    .flowplayer * {
+        cursor: default !important;
+    }
+    /* flexible width for the fancybox wrapper */
+    .fancybox-wrap {
+        /*width: 80% !important;*/
+        width: 50% !important;
+        margin: -135px 0 0 0;
+    }
+
+    .fancybox-close {
+        top: -10px;
+        right: -12px;
+    }
+
+    .fancybox-skin {
+        background-color: #000000;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+    .fancybox-opened .fancybox-skin {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .flowplayer .fp-context-menu {
+        display: none;
+    }
+
+    .flowplayer .fp-fullscreen {
+        left: -8px;
+    }
+
+    .fancybox-lock .fancybox-overlay {
+        overflow: auto;
+    }
+
+    #fancybox-loading div {
+        width: 50%;
+        height: 50%;
+        background-color: #000000;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+    .fancybox-lock {
+        margin-right: 0 !important;
+    }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            width: '50%',
+            height: '50%',
+            fitToView: false,
+            autoSize: false,
+            type: 'iframe'
+        });
+
+    });
+</script>
+<div class="homepage-carousel content-block">
+    <div class="carousel slide" id="homepage-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+
+                    <li data-target="#homepage-carousel" data-slide-to="0" class="active">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-customer-appreciation-hero-generic-V2.jpg"></span>
+                    </li>                    <li data-target="#homepage-carousel" data-slide-to="1">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-3-4-oz-Gray-Howling-Wolf-Day-2-39-6-1-16.jpg"></span>
+                    </li>
+                    <li data-target="#homepage-carousel" data-slide-to="2">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-APMEX-NEW-TEP-CARDS.jpg"></span>
+                    </li>
+                    <li data-target="#homepage-carousel" data-slide-to="3">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-Incuse-Indian-Replica-Rounds-6-2-16.jpg"></span>
+                    </li>
+                    <li data-target="#homepage-carousel" data-slide-to="4">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-Father&#39;s-Day-Selection-6-1-16.jpg"></span>
+                    </li>
+                    <li data-target="#homepage-carousel" data-slide-to="5">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-ATB-Harpers-Ferry-hero-pre-order-5-25-16.jpg"></span>
+                    </li>
+                    <li data-target="#homepage-carousel" data-slide-to="6">
+                        <span class="thumb"><img src="http://www.images-apmex.com/content/images/content/carousel/725x376-North-American-predator-sea-lion-4-25-16-V2.jpg"></span>
+                    </li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item item-test active">
+                <a href="/category/90198/apmex-customer-appreciation-sale?_campaign=05312016category90198" class="tlm_homehero" data-campaign="05312016category90198" data-position="2" data-friendly="">
+                    <div class="item-wrapper">
+                      <div class="left">
+                        <div class="item-title">
+                          <h3>2016 American Eagles</h3>
+                        </div>
+                        <p class="item-description">
+                          Short message about the greatness of this coin here.
+                        </p>
+                        <div class="item-price">
+                          $$1,334.16
+                        </div>
+                        <a href="#" class="btn-orange btn">
+                          Buy Now
+                        </a>
+                      </div>
+                      <div class="right">
+                        <img src="{{site.baseurl}}/img/banner-test/test-coin.png" alt="TEST COIN" height="300px" width="300px" class="test-img">
+                      </div>
+                    </div>
+                </a>
+                <div class="item-test-bg" style="background-image:url('{{ site.baseurl }}/img/banner-test/banner-test-bg-1.png')"></div>
+            </div>
+        </div>
+        <a href="#homepage-carousel" class="carousel-control left" data-slide="prev">
+            <i class="icon icon-carousel-left"></i>
+        </a>
+        <a href="#homepage-carousel" class="carousel-control right" data-slide="next">
+            <i class="icon icon-carousel-right"></i>
+        </a>
+    </div>
+</div>
+  <script type="text/javascript">
+        $(document).ready(function () {
+            $('#homepage-carousel').carousel({
+                interval: 8000
+            });
+            $('.fancybox').click(function () {
+                $('.carousel').carousel('pause');
+            });
+            $("#homepage-carousel").swiperight(function () {
+                $("#homepage-carousel").carousel('prev');
+            });
+            $("#homepage-carousel").swipeleft(function () {
+                $("#homepage-carousel").carousel('next');
+            });
+            if (location.search.indexOf('wolf=') >= 0) {
+                $("a#wolf").trigger('click');
+            }
+        });
+
+    </script>
+
+
+
+<div class="content-block home-section-benefits">
+    <img src="http://www.images-apmex.com/content/images/content/carousel/StripBottom-FreeShipTruck.jpg" width="725" height="65" alt="APMEX Benefits" usemap="#benefits-strip">
+
+    <map name="benefits-strip">
+        <area shape="rect" coords="0,0,230,60" alt="APMEX has the fastest shipping of precious metals in the industry, all gold and silver orders ship within one business day." title="Fastest Shipping of Precious Metals" href="/quickship">
+        <area shape="rect" coords="231,0,483,60" alt="All precious metals orders over $99 qualify for free shipping. Proud to ship to all USA gold dealers and USA consumers." title="Free Shipping on Gold & Silver" href="/freeshipping">
+        <area shape="rect" coords="484,0,724,60" alt="Buying gold from APMEX is safe and secure. APMEX has been selling precious metals for more than 15 years and offers competitive gold and silver prices." title="Why Buy Gold from APMEX?" href="/whyapmex">
+    </map>
+
+</div>
+
+<div class="content-block content-section">
+    <h2 style="font-size: 18px;"><a href="/category/10002/topsellers?sortby=mostpopulardesc">Precious Metals Top Picks</a></h2>
+    <div class="products-carousel">
+        <div class="carousel slide" id="top-selling-carousel" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+
+                <div class="item active">
+                        <div class="product-item">
+                            <div class="product-item-image"><a href="/product/93743/2016-1-oz-gold-american-eagle-bu?toppicks1"><img alt="2016 1 oz Gold American Eagle BU" height="175" src="http://www.images-apmex.com/images/Catalog Images/Products/93743_Slab.jpg?v=20160115084949&amp;width=175&amp;height=175" title="2016 1 oz Gold American Eagle BU" width="175" /></a></div>
+                            <div class="product-item-title" style="min-height:60px;"><a href="/product/93743/2016-1-oz-gold-american-eagle-bu?toppicks1">2016 1 oz Gold American Eagle BU</a></div>
+                            <div class="product-item-aslowas">
+                                <a href="/product/93743/2016-1-oz-gold-american-eagle-bu?toppicks1">As Low As: $1,271.39</a>
+                            </div>
+                            <div class="product-item-buynow"><button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=93743', '#form-product-addtocart-93743');return false;">Buy Now</button></div>
+
+
+                            <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=93743&amp;returnUrl=%2F');return false;" rel="nofollow"
+                               href="/Catalog/ProductQuickView?productId=93743" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-image"><a href="/product/93757/2016-canada-1-oz-silver-maple-leaf-bu?toppicks2"><img alt="2016 Canada 1 oz Silver Maple Leaf BU" height="175" src="http://www.images-apmex.com/images/Catalog Images/Products/93757_Slab.jpg?v=20160208094504&amp;width=175&amp;height=175" title="2016 Canada 1 oz Silver Maple Leaf BU" width="175" /></a></div>
+                            <div class="product-item-title" style="min-height:60px;"><a href="/product/93757/2016-canada-1-oz-silver-maple-leaf-bu?toppicks2">2016 Canada 1 oz Silver Maple Leaf BU</a></div>
+                            <div class="product-item-aslowas">
+                                <a href="/product/93757/2016-canada-1-oz-silver-maple-leaf-bu?toppicks2">As Low As: $18.28</a>
+                            </div>
+                            <div class="product-item-buynow"><button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=93757', '#form-product-addtocart-93757');return false;">Buy Now</button></div>
+
+
+                            <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=93757&amp;returnUrl=%2F');return false;" rel="nofollow"
+                               href="/Catalog/ProductQuickView?productId=93757" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                        </div>
+                </div>
+                    <div class="item">
+                            <div class="product-item">
+                                <div class="product-item-image"><a href="/product/93752/2016-1-oz-gold-buffalo-bu?toppicks3"><img alt="2016 1 oz Gold Buffalo BU" class="lazy" data-original="http://www.images-apmex.com/images/Catalog Images/Products/93752_Slab.jpg?v=20160517101904&amp;width=175&amp;height=175" height="175" src="http://www.images-apmex.com/content/images/NoThumb.jpg" title="2016 1 oz Gold Buffalo BU" width="175" /></a></div>
+                                <div class="product-item-title" style="min-height:60px;"><a href="/product/93752/2016-1-oz-gold-buffalo-bu?toppicks3">2016 1 oz Gold Buffalo BU</a></div>
+                                <div class="product-item-aslowas">
+                                    <a href="/product/93752/2016-1-oz-gold-buffalo-bu?toppicks3">As Low As: $1,271.39</a>
+                                </div>
+                                <div class="product-item-buynow"><button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=93752', '#form-product-addtocart-93752');return false;">Buy Now</button></div>
+
+
+                                <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=93752&amp;returnUrl=%2F');return false;"
+                                   href="/Catalog/ProductQuickView?productId=93752" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item-image"><a href="/product/93754/2016-1-oz-silver-american-eagle-bu?toppicks4"><img alt="2016 1 oz Silver American Eagle BU" class="lazy" data-original="http://www.images-apmex.com/images/Catalog Images/Products/93754_Slab.jpg?v=20160114045916&amp;width=175&amp;height=175" height="175" src="http://www.images-apmex.com/content/images/NoThumb.jpg" title="2016 1 oz Silver American Eagle BU" width="175" /></a></div>
+                                <div class="product-item-title" style="min-height:60px;"><a href="/product/93754/2016-1-oz-silver-american-eagle-bu?toppicks4">2016 1 oz Silver American Eagle BU</a></div>
+                                <div class="product-item-aslowas">
+                                    <a href="/product/93754/2016-1-oz-silver-american-eagle-bu?toppicks4">As Low As: $18.68</a>
+                                </div>
+                                <div class="product-item-buynow"><button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=93754', '#form-product-addtocart-93754');return false;">Buy Now</button></div>
+
+
+                                <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=93754&amp;returnUrl=%2F');return false;"
+                                   href="/Catalog/ProductQuickView?productId=93754" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                            </div>
+                    </div>
+
+            </div>
+                <a href="#top-selling-carousel" class="carousel-control left" data-slide="prev">
+                    <i class="icon icon-products-left"></i>
+                </a>
+                <a href="#top-selling-carousel" class="carousel-control right" data-slide="next">
+                    <i class="icon icon-products-right"></i>
+                </a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#top-selling-carousel').carousel({
+            interval: 11000
+        });
+    });
+
+</script>
+
+
+
+<div class="clearfix">
+        <div class="page-content-main-column">
+            <div class="content-block content-section content-column">
+                <h2 style="font-size: 18px;">Recently Viewed Precious Metals</h2>
+
+
+                <div class="products-carousel">
+                    <div class="carousel slide" id="recently-viewed-carousel" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+
+                                    <div class="item active">
+                                            <div class="product-item">
+                                                <div class="product-item-image"><a href="/product/18428/1-oz-gold-american-eagle-coin-tubes-slightly-used"><img alt="1 oz Gold American Eagle Coin Tubes (Slightly Used)" height="175" src="http://www.images-apmex.com/images/Catalog Images/Products/18428_Obv.jpg?v=20130101120000&amp;width=175&amp;height=175" title="1 oz Gold American Eagle Coin Tubes (Slightly Used)" width="175" /></a></div>
+                                                <div class="product-item-title" style="min-height:60px;"><a href="/product/18428/1-oz-gold-american-eagle-coin-tubes-slightly-used">1 oz Gold American Eagle Coin Tubes (Slightly Used)</a></div>
+
+
+                                                    <div class="product-item-aslowas">
+                                                        <a href="/product/18428/1-oz-gold-american-eagle-coin-tubes-slightly-used">As Low As: $2.99</a>
+                                                    </div>
+                                                    <div class="product-item-buynow">
+                                                        <button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=18428', '#form-product-addtocart-18428');return false;">Buy Now</button>
+                                                    </div>
+
+
+                                                <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=18428&amp;returnUrl=%2F');return false;" rel="nofollow"
+                                                   href="/Catalog/ProductQuickView?productId=18428" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="item ">
+                                            <div class="product-item">
+                                                <div class="product-item-image"><a href="/product/93743/2016-1-oz-gold-american-eagle-bu"><img alt="2016 1 oz Gold American Eagle BU" height="175" src="http://www.images-apmex.com/images/Catalog Images/Products/93743_Slab.jpg?v=20160115084949&amp;width=175&amp;height=175" title="2016 1 oz Gold American Eagle BU" width="175" /></a></div>
+                                                <div class="product-item-title" style="min-height:60px;"><a href="/product/93743/2016-1-oz-gold-american-eagle-bu">2016 1 oz Gold American Eagle BU</a></div>
+
+
+                                                    <div class="product-item-aslowas">
+                                                        <a href="/product/93743/2016-1-oz-gold-american-eagle-bu">As Low As: $1,271.39</a>
+                                                    </div>
+                                                    <div class="product-item-buynow">
+                                                        <button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=93743', '#form-product-addtocart-93743');return false;">Buy Now</button>
+                                                    </div>
+
+
+                                                <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=93743&amp;returnUrl=%2F');return false;" rel="nofollow"
+                                                   href="/Catalog/ProductQuickView?productId=93743" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="item ">
+                                            <div class="product-item">
+                                                <div class="product-item-image"><a href="/product/97261/1-oz-copper-round-frank-frazetta-silver-warrior"><img alt="1 oz Copper Round - Frank Frazetta (Silver Warrior)" height="175" src="http://www.images-apmex.com/images/Catalog Images/Products/97261_Obv.jpg?v=20160523041726&amp;width=175&amp;height=175" title="1 oz Copper Round - Frank Frazetta (Silver Warrior)" width="175" /></a></div>
+                                                <div class="product-item-title" style="min-height:60px;"><a href="/product/97261/1-oz-copper-round-frank-frazetta-silver-warrior">1 oz Copper Round - Frank Frazetta (Silver Warrior)</a></div>
+
+
+                                                    <div class="product-item-aslowas">
+                                                        <a href="/product/97261/1-oz-copper-round-frank-frazetta-silver-warrior">As Low As: $1.99</a>
+                                                    </div>
+                                                    <div class="product-item-buynow">
+                                                        <button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=97261', '#form-product-addtocart-97261');return false;">Buy Now</button>
+                                                    </div>
+
+                                                    <div class="ribbon-label is-new">New</div>
+
+                                                <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=97261&amp;returnUrl=%2F');return false;" rel="nofollow"
+                                                   href="/Catalog/ProductQuickView?productId=97261" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="item ">
+                                            <div class="product-item">
+                                                <div class="product-item-image"><a href="/product/97262/1-oz-copper-round-frank-frazetta-death-dealer"><img alt="1 oz Copper Round - Frank Frazetta (Death Dealer)" height="175" src="http://www.images-apmex.com/images/Catalog Images/Products/97262_Obv.jpg?v=20160420101819&amp;width=175&amp;height=175" title="1 oz Copper Round - Frank Frazetta (Death Dealer)" width="175" /></a></div>
+                                                <div class="product-item-title" style="min-height:60px;"><a href="/product/97262/1-oz-copper-round-frank-frazetta-death-dealer">1 oz Copper Round - Frank Frazetta (Death Dealer)</a></div>
+
+
+                                                    <div class="product-item-aslowas">
+                                                        <a href="/product/97262/1-oz-copper-round-frank-frazetta-death-dealer">As Low As: $1.99</a>
+                                                    </div>
+                                                    <div class="product-item-buynow">
+                                                        <button type="submit" class="btn btn-orange" onclick="ShoppingCart.addproducttocart('/cart/addtocart?productId=97262', '#form-product-addtocart-97262');return false;">Buy Now</button>
+                                                    </div>
+
+                                                    <div class="ribbon-label is-new">New</div>
+
+                                                <a onclick="ShoppingCart.showQuickView('/Catalog/ProductQuickView?productId=97262&amp;returnUrl=%2F');return false;" rel="nofollow"
+                                                   href="/Catalog/ProductQuickView?productId=97262" title="Quick View"><i class="icon icon-quicklook"></i></a>
+                                            </div>
+                                    </div>
+
+                        </div>
+                            <a href="#recently-viewed-carousel" class="carousel-control left" data-slide="prev">
+                                <i class="icon icon-products-left"></i>
+                            </a>
+                            <a href="#recently-viewed-carousel" class="carousel-control right" data-slide="next">
+                                <i class="icon icon-products-right"></i>
+                            </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content-main-column" style="margin-right: 0px;">
+            <div class="content-block content-section condensed-block content-column">
+                <p class="text-center">
+                    <a href="/citadel" title="Citadel"><img src="http://www.images-apmex.com/content/images/content/citadel.png" alt="Citadel offers maximum security storage for your precious metals. Insure your gold and silver investments." title="Citadel Precious Metals Storage"></a>
+                </p>
+                <p class="text-left" style="margin-left: 53px;"><strong><a href="/citadel">Learn More</a></strong></p>
+                <hr>
+                <p class="text-center">
+                    <a href="/apmexclub" title="APMEX Club"><img src="http://www.images-apmex.com/content/images/content/apmexclub.png" alt="The American Precious Metals Exchange has a loyalty program that rewards gold and silver buyers with free shipping, discounted storage, and gold and silver promotions." title="APMEX Club - Where Your Loyalty Is Rewarded."></a>
+                </p>
+                <p class="text-left" style="margin-left: 53px;"><strong><a href="/apmexclub">Learn More</a></strong></p>
+                <hr>
+                <p class="text-center">
+                    <a href="/quickship" title="Quickship"><img src="http://www.images-apmex.com/content/images/content/quickship.png" alt="Quickship - More Speed. Less Cost on gold and silver. NEXT Day Shipping for your precious metals." title="Gold & Silver Quick Ship."></a>
+                </p>
+                <p class="text-left" style="margin-left: 53px;"><strong><a href="/quickship">Learn More</a></strong></p>
+
+            </div>
+        </div>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#recently-viewed-carousel').carousel({
+            interval: 8000
+        });
+    });
+
+</script>
+<div>
+    <h3>Why Buy Precious Metals from APMEX?</h3>
+    <div class="truncate-tip" id="truncate-tip" style="display: none;">
+        <p>APMEX, the leading Precious Metals retailer in the United States, understands the needs of Gold and Silver investors. Now celebrating 15 years in business, APMEX distinguishes itself through exceptional customer service, unmatched product quality and options and a brain trust of resources to help investors develop their ideal investment portfolio.  </p>
+
+        <p>Although <a href="/">Precious Metals</a> can be part of a balanced portfolio, APMEX understands this investment isn’t for everyone. It may not suit those who prefer to see their wealth confined purely to numbers on a page. Thrill-seekers may be disappointed to find that <a href="/spotprices/gold-price">Gold and Silver prices</a> don’t fluctuate wildly at the whim of global stock markets, as many factors are involved in Precious Metals pricing. Unlike traders of other buy-today-sell-tomorrow commodities, investors in Gold and Silver have been known to pass down their collections to future generations. They understand the unique value of an investment they can hold. </p>
+
+        <h3>Gold and Silver Prices</h3>
+
+        <p>Precious Metals prices are perhaps the most important factor to consider when building your investment. Don’t underestimate the importance of relying on a reputable source. Make APMEX your hub for Gold and <a href="/spotprices/silver-prices">Silver prices</a>.</p>
+
+        <p>Simply look to the right-hand sidebar of the APMEX website for instant updates on Gold, Silver, Platinum and Palladium bid and ask spot prices. At a glance, charts show the daily price progression of APMEX’s most popular Precious Metals offerings. More in-depth pricing information is also available on the website. Comprehensive historical pricing data for Gold and Silver prices going back 30 years is available free through APMEX. </p>
+
+        <p>How are Gold and Silver prices determined? A number of factors are taken into consideration. Precious Metals prices are influenced by current events, market speculation, currency values, supply and demand and buying power. But rest assured that regardless of these factors, Precious Metals retain intrinsic value as a tangible and fungible commodity. </p>
+
+        <p>The best way to stay on top of price fluctuations is to <a href="/account/register">become an APMEX account member</a> and register for price alerts by email or text message. There is no better way to maximize your buying position, as well as your sell or exit strategy. </p>
+
+        <h3>Extensive Selection of Precious Metals for Sale</h3>
+
+        <p>Your investment is sensible, but it should also be beautiful. Whether you are seeking Silver coins for sale or Gold bars for sale, look beyond the luster of the Precious Metals and consider designs that represent your personality and interests. </p>
+
+        <p>A bouquet of string instruments adorn Gold Philharmonic coins produced by the Munze Österreich, or Austrian Mint, in Vienna. Lady Liberty casts open her arm on <a href="/category/22110/silver-american-eagles">American Silver Eagles</a>, the world’s only Silver bullion coin whose weight, content and purity are guaranteed by the United States government. </p>
+
+        <p>Find these and thousands more options through APMEX. With APMEX, your Precious Metals purchase is guaranteed and fully insured. Learn more about your purchasing and shipping options, and find <a href="/testimonials">APMEX reviews</a> from satisfied customers, through APMEX.  </p>
+
+    </div>
+</div>
+<div class="content-block content-section content-block-wrapper">
+    <img src="http://www.images-apmex.com/content/images/content/Why-APMEXbg.png">
+</div>
+<div class="pull-left content-left-block">
+    <a href="/whyapmex" title="Why APMEX?">
+        <img src="http://www.images-apmex.com/content/images/content/whyApmex.png" alt="With a vast selection of precious metals products, transparent gold and silver pricing, and industry-leading precious metals exchange service, see what sets APMEX apart." title="Best Precious Metals Exchange.">
+    </a>
+    <p class="text-left" style="margin-left: 36px;"><strong><a href="/whyapmex">Learn More</a></strong></p>
+</div>
+<div class="pull-right content-right-block">
+    <a href="/reviews-and-testimonials" title="What Customers are Saying">
+        <img src="http://www.images-apmex.com/content/images/content/reviews.png" alt="Trust Pilot Reviews for APMEX. Customers review APMEX’s precious metals, silver coins, silver bars, gold coins, and gold bars. Rated #1 Specialty eRetailer by Internet Retailer Magazine." title="APMEX Reviews & Testimonials.">
+    </a>
+</div>
+
+
+
+        </div>
+        <div class="page-content-sidebar">
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="margin-bottom: 10px;">
+
+            <a href="/category/90198/apmex-customer-appreciation-sale?_campaign=05312016category90198">
+                <img src="http://www.images-apmex.com/content/images/marketing/Right-Rail-Customer-Appreciation.jpg" alt="Customer Appreciation Week" title="Customer Appreciation Week" style="width:260px; height:125px;">
+            </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="content-block">
+        <div class="table-spot-prices-header">Precious Metal Spot Prices</div>
+        <table class="table-spot-prices table-striped">
+            <colgroup>
+                <col width="20%">
+                <col width="25%">
+                <col width="25%">
+                <col width="10%">
+                <col width="20%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Metal</th>
+                    <th class="text-center">Bid</th>
+                    <th class="text-center">Ask</th>
+                    <th colspan="2">Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><span class="item-metal">Gold</span></td>
+                        <td class="text-right"><span class="item-bid">$1,212.40</span></td>
+                        <td class="text-right"><span class="item-ask">$1,214.40</span></td>
+                        <td><span class="item-change is-down"><span class="caret"></span></span></td>
+                        <td><span class="item-change is-down">($0.30)</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="item-metal">Silver</span></td>
+                        <td class="text-right"><span class="item-bid">$15.99</span></td>
+                        <td class="text-right"><span class="item-ask">$16.09</span></td>
+                        <td><span class="item-change is-up"><span class="caret"></span></span></td>
+                        <td><span class="item-change is-up">$0.12</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="item-metal">Platinum</span></td>
+                        <td class="text-right"><span class="item-bid">$951.10</span></td>
+                        <td class="text-right"><span class="item-ask">$961.10</span></td>
+                        <td><span class="item-change is-down"><span class="caret"></span></span></td>
+                        <td><span class="item-change is-down">($10.80)</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="item-metal">Palladium</span></td>
+                        <td class="text-right"><span class="item-bid">$531.30</span></td>
+                        <td class="text-right"><span class="item-ask">$536.30</span></td>
+                        <td><span class="item-change is-down"><span class="caret"></span></span></td>
+                        <td><span class="item-change is-down">($11.50)</span></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="text-center small">Last Updated: 6/2/2016 11:56:22 AM ET</p>
+
+
+
+
+<div class="content-block" style="background-color: #ffffff;box-shadow: 0 0 1px #DEDEDE;">
+    <div class="historical-charts-tabs" style="margin-bottom: 0px;">
+        <ul id="historical-charts-tabs" style="margin: 0px;margin-bottom: 5px;">
+            <li class="active"><a href="/spotprices/gold-price" rel="1" title="Gold Prices">Gold</a></li>
+            <li><a href="/spotprices/silver-prices" rel="2" title="Silver Prices">Silver</a></li>
+            <li><a href="/spotprices/platinum-price" rel="3" title="Platinum Prices">Platinum</a></li>
+            <li><a href="/spotprices/palladium-price" rel="4" title="Palladium Prices">Palladium</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="historical-charts-gold">
+                <script type="text/javascript">
+                    loadDailySpotPriceChart('/SpotPrice/GetDayChart?width=240&amp;height=200&amp;metalId=1&amp;themeId=2&amp;type=day', 1);
+                </script>
+            </div>
+        </div>
+        <p class="text-center" title="Silver and Gold Prices.">All Prices in USD </p>
+        <p class="text-center" style="font-size: 16px; font-weight: bold; margin-top: -10px;"><a class="historical-charts" href="/spotprices/gold-price">View <span class="metal-chart">Gold Price</span> Chart</a></p>
+    </div>
+</div>
+
+
+<div class="content-block content-section condensed-block" style="padding: 5px 40px;">
+
+    <p class="text-center">
+        <a href="/alerttools" title="Alerts and Tools">
+            <img src="http://www.images-apmex.com/content/images/content/right-alerts-tools-v3.jpg" alt="Precious metals market alerts, gold and silver price alerts, and tools on how to setup your precious metals portfolio to properly invest." title="Gold and Silver Price Alerts.">
+        </a>
+    </p>
+    <h4><a href="/alerttools">Tools & Alerts</a></h4>
+    <p>
+        Gold and Silver prices. Never miss an investment opportunity.
+        <br />
+        <a href="/alerttools"><strong>Learn More</strong></a>
+    </p>
+
+
+
+
+
+<p class="text-center">
+    <a href="/Commentaries/3389/daily-gold-silver-market-report-6-1-2016" title="Market Reports">
+        <img src="http://www.images-apmex.com/content/images/content/right-market-reports.jpg" alt="Find daily gold prices in USA, silver prices, and precious metals prices with APMEX Daily Reports." title="Precious Metals Market Reports"></a>
+</p>
+<h4><a href="/Commentaries/3389/daily-gold-silver-market-report-6-1-2016" title="Market Reports">Market Reports</a></h4>
+<p>GOLD DOWN ON FED’S PROJECTED NEXT MOVE; CONSUMER CONFIDENCE SLIDES...
+    <a href="/Commentaries/3389/daily-gold-silver-market-report-6-1-2016"><strong>Read More</strong></a>
+</p>
+
+
+    <p class="text-center">
+        <a href="/education" title="Guide to Investing">
+            <img src="http://www.images-apmex.com/content/images/content/right-education.jpg" alt="Get educated on investing in gold and silver. Learn about spot price, and whether to buy silver coins or gold bars." title="Your Guide to Investing in Gold and Silver">
+        </a>
+    </p>
+    <h4><a href="/education">Your Guide to Investing in Gold and Silver</a></h4>
+    <p>
+        We are committed to helping you better understand Precious Metals.
+        <a href="/education"><strong>Learn More</strong></a>
+    </p>
+
+    <p class="text-center" style=" padding-top: 15px; ">
+        <a href="/ira-benefits-gold-ira-silver-ira" title="Protect Your Assets With A Precious Metals IRA">
+            <img src="http://www.images-apmex.com/content/images/content/right-ira-v2.jpg" alt="Investment diversification is important for retirement funds. Precious metals help protect your IRA." title="Precious Metals IRA">
+        </a>
+    </p>
+    <h4><a href="/ira-benefits-gold-ira-silver-ira">Protect Your Assets With A Precious Metals IRA</a></h4>
+    <p>
+        Diversification is as important in your retirement fund as it is in any portfolio.
+        <a href="/ira-benefits-gold-ira-silver-ira"><strong>Learn More</strong></a>
+    </p>
+
+    <p class="text-center" style=" padding-top: 15px; ">
+        <a href="/selltous" title="Sell To Us">
+            <img src="http://www.images-apmex.com/content/images/content/right-sell-to-us.jpg" alt="Sell gold, silver, and precious metals to APMEX. We buy thousands of silver coins and gold coins bouillon." title="Sell gold, Sell Silver, Sell Precious Metals">
+        </a>
+    </p>
+    <h4><a href="/selltous" title="Sell To Us">Sell To Us</a></h4>
+    <p>
+        We are always buying, learn how to safely and easily sell  your Precious Metals to us today.
+        <br />
+        <a href="/selltous"><strong>Get Started</strong></a>
+    </p>
+    <br />
+</div>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-content newbie" style="display:none">
+
+<div class="page-container">
+	<section class="content-block">
+		<div class="header-container" style=" padding-top:24px; padding-bottom:12px; text-align:left;">
+			<div class="silver" style="width: 500px !important;height: 164px;text-align: center;float: left;">
+				<a href="/new-to-silver/"><img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/silver.png"></a>
+			</div>
+			<div class="gold" style="width: 500px !important;height: 164px;text-align: center;float: left;">
+				<a href="/new-to-gold/"><img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/gold.png"></a>
+			</div>
+		</div>
+	</section>
+
+    <div class="display-graph">
+        <img class="view-graph" src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/view-price-charts.png" />
+        <img class="hide-graph" src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/hide-price-charts.png" />
+    </div>
+
+    <iframe src="http://www.apmex.com/spotprice/viewspotprice?type=embed" scrolling="no" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:50px;width:78%;"  width="78%"></iframe>
+
+    <div class="graph-wrapper">
+	    <iframe src="http://www.apmex.com/spotprice/charts?type=embed" scrolling="no" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height: 530px; width:100%;"  width="100%"></iframe>
+    </div>
+
+		<section style=" margin:12px 0 24px 0; text-align:center;border-top:solid 1px #eaeaea;border-bottom:solid 1px #eaeaea;background:#fbfbfb;padding:24px 0;">
+			<img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/credibility-grey.png" />
+		</section>
+
+		<section style="margin:36px 0 24px 0;">
+			<div style="padding-bottom: 20px; border-top: 1px solid #eaeaea; margin-top: 20px; border-bottom: 0;text-align: center; clear: both;height: 1px;">
+				<div style="background-color:#ffffff; color:#444444;position: relative;padding: 0 35px;line-height: 36px;top: -19px;font-size: 2em;color: #fff;display: inline-block;border: 1px solid transparent;    background-color: #ffffff;color: #444444;">
+					<span>Top Sellers</span>
+				</div>
+			</div>
+			<div class="item-container">
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/93754/2016-1-oz-silver-american-eagle-bu">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/93754_Slab.jpg?v=20160114045916&width=158&height=158" width="158" height="158" alt="2016 1 oz Silver American Eagle BU">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>2016 1 oz Silver American Eagle BU</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/93754/2016-1-oz-silver-american-eagle-bu" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/93747/2016-canada-1-oz-gold-maple-leaf-bu">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/93747_Slab.jpg?v=20151006073812&width=158&height=158" width="158" height="158" alt="2016 Canada 1 oz Gold Maple Leaf BU">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>2016 Canada 1 oz Gold Maple Leaf BU</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/93747/2016-canada-1-oz-gold-maple-leaf-bu" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/82236/1-oz-gold-bar-pamp-suisse-lady-fortuna-veriscan-in-assay">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/82236_Slab.jpg?v=20150324095058&width=158&height=158" width="158" height="158" alt="1 oz Gold Bar - PAMP Suisse Lady Fortuna Veriscan In Assay">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>1 oz Gold Bar - PAMP Suisse Lady Fortuna Veriscan In Assay</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/82236/1-oz-gold-bar-pamp-suisse-lady-fortuna-veriscan-in-assay" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/44447/1-oz-silver-round-buffalo">
+							<img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/44447_Slab-158x158.jpg" width="158" height="158" alt="84913_Slab">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>1 oz Silver Round – Buffalo</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/44447/1-oz-silver-round-buffalo" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="clearfix"></div>
+
+		<section style="margin:74px 0 24px 0;">
+			<div style="padding-bottom: 20px; border-top: 1px solid #eaeaea; margin-top: 20px; border-bottom: 0;text-align: center; clear: both;height: 1px;">
+				<div style="background-color:#ffffff; color:#444444;position: relative;padding: 0 35px;line-height: 36px;top: -19px;font-size: 2em;color: #fff;display: inline-block;border: 1px solid transparent;    background-color: #ffffff;color: #444444;">
+					<span>New Arrivals</span>
+				</div>
+			</div>
+			<div class="item-container">
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/23557/1-gram-gold-bar-perth-mint-oriana-design-in-assay">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/23557_Slab.jpg?v=20160114124755&width=158&height=158" width="158" height="158" alt="1 gram Gold Bar - Perth Mint Oriana Design (In Assay)">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>1 gram Gold Bar - Perth Mint Oriana Design (In Assay)</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/23557/1-gram-gold-bar-perth-mint-oriana-design-in-assay" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/94292/2016-canada-3-4-oz-silver-howling-wolves-bu">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/94292_Slab.jpg?v=20151202024204&width=158&height=158" width="158" height="158" alt="2016 Canada 3/4 oz Silver Howling Wolves BU">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>2016 Canada 3/4 oz Silver Howling Wolves BU</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/94292/2016-canada-3-4-oz-silver-howling-wolves-bu" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/92374/2016-china-15-gram-gold-panda-bu-sealed">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/92374_Slab.jpg?v=20151203050310&width=158&height=158" width="158" height="158" alt="2016 China 15 gram Gold Panda BU (Sealed)">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>2016 China 15 gram Gold Panda BU (Sealed)</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/92374/2016-china-15-gram-gold-panda-bu-sealed" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-image">
+						<a href="http://www.apmex.com/product/95300/2016-canada-silver-1-oz-silver-geometry-in-art-the-polar-bear">
+							<img src="http://www.images-apmex.com/images/Catalog%20Images/Products/95300_Slab.jpg?v=20160114023831&width=158&height=158" width="158" height="158" alt="2016 Canada Silver 1 oz Silver Geometry in Art: The Polar Bear">
+						</a>
+					</div>
+					<div class="item-title">
+						<h4>2016 Canada Silver 1 oz Silver Geometry in Art: The Polar Bear</h4>
+					</div>
+					<div class="new-button">
+						<a href="http://www.apmex.com/product/95300/2016-canada-silver-1-oz-silver-geometry-in-art-the-polar-bear" target="_self" class="qbutton  big_large center">Buy Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+</div>
+<div style="border-top: solid 1px #eaeaea;background: #fbfbfb;margin-top: 54px;padding:24px 0;">
+	<div class="page-container">
+		<section>
+			<h2 style="text-align:center;font-size:2em;">Why APMEX?</h2>
+			<div class="item-container">
+				<div class="item comp">
+					<span class="icn"><img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/transparency.png" /></span>
+					<div class="box_holder_inner large center">
+						<h3 class="icon_title" style="">Transparency</h3>
+						<span class="separator transparent" style="margin: 8px 0;"></span>
+						<p style="">Our clear-cut pricing overview means you can get all the information you need to make a solid investment decision. We offer you easy options that make the purchasing process simple and fast.</p>
+					</div>
+				</div>
+				<div class="item comp">
+					<span class="icn"><img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/concierge.png" /></span>
+					<div class="box_holder_inner large center">
+						<h3 class="icon_title" style="">Concierge Service</h3>
+						<span class="separator transparent" style="margin: 8px 0;"></span>
+						<p style="">Our concierge philosophy means you always get premium service on your order. Not only do we offer some of the industry’s fastest shipping, but we also provide personalized support.</p>
+					</div>
+				</div>
+				<div class="item comp">
+					<span class="icn"><img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/selection.png" /></span>
+					<div class="box_holder_inner large center">
+						<h3 class="icon_title" style="">Selection</h3>
+						<span class="separator transparent" style="margin: 8px 0;"></span>
+						<p style="">APMEX offers an outstanding selection, with more than 10,000 products in stock and ready to ship. We carry coins of substantial numismatic value in addition to bullion bars and rounds.</p>
+					</div>
+				</div>
+				<div class="item comp">
+					<span class="icn"><img src="http://www.images-apmex.com/content/images/marketing/NewUserExperience/img/education.png" /></span>
+					<div class="box_holder_inner large center">
+						<h3 class="icon_title" style="">Education</h3>
+						<span class="separator transparent" style="margin: 8px 0;"></span>
+						<p style="">Understanding your investment is essential. APMEX’s education section offers a range of introductory materials, providing critical fundamentals of Precious Metal investing.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+
+
+<style>
+    /*.page-content-main, .page-content-sidebar
+    {
+        display: none;
+    }*/
+
+   .newbie .item-container {
+		padding-top:24px;
+		float:left;
+		width:1000px;
+	}
+	.newbie .item-container .item:first-child {margin-left: 0;}
+	.newbie .item {
+		width: 23.125%;
+		float: left;
+		margin-left: 2.5%;
+		box-sizing: border-box;
+		display: block;
+		text-align: center;
+		position: relative;
+		/*padding-left: 10px;
+		padding-right: 10px;*/
+	}
+	.newbie .item.comp {
+		margin-top: 56px;
+		border: 1px solid #eaeaea;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		-o-border-radius: 4px;
+		border-radius: 4px;
+	}
+	.newbie .item-image {
+		margin: 0 auto !important;
+	}
+	.newbie .item-title h4 {
+		margin-top: 8px;
+		line-height: 1.4em;
+		margin-bottom: 10px !important;
+		min-height: 66px;
+	}
+	.big_large{
+		height: 47px;
+		line-height: 47px;
+		font-size: 18px;
+		padding: 0 22px;
+		text-align: center;
+		color: #ffffff;
+		border: 1px solid #e67522;
+		font-weight: 700;
+		background: #e67522;
+		background: #fda33a -ms-linear-gradient(bottom, #e67522 0%, #fda33a 100%);
+		background: #fda33a -moz-linear-gradient(bottom, #e67522 0%, #fda33a 100%);
+		background: #fda33a -o-linear-gradient(bottom, #e67522 0%, #fda33a 100%);
+		background: #fda33a -webkit-gradient(linear, left bottom, left top, color-stop(0,#e67522), color-stop(1, #fda33a));
+		background: #fda33a -webkit-linear-gradient(bottom, #e67522 0%, #fda33a 100%);
+		background: #fda33a linear-gradient(to top, #e67522 0%, #fda33a 100%);
+		display: inline-block;
+		font-family: inherit;
+		text-decoration: none;
+		cursor: pointer;
+		white-space: nowrap;
+		outline: 0;
+		font-style: normal;
+		-o-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-ms-border-radius: 4px;
+		border-radius: 4px;
+		text-shadow: none;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+		-ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+		-o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+	}
+	.item .icn {
+		position: absolute;top:-56px;left:0;right:0;margin:0 auto;width: 112px;
+	}
+	.box_holder_inner.large {
+    	padding: 71px 20px 30px;
+    }
+
+    .display-graph {
+        display: inline;
+        float: right;
+    }
+
+    .hide-graph, .graph-wrapper {
+        display: none;
+    }
+
+</style>
+    </div>
+
+
+</main>

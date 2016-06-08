@@ -576,10 +576,6 @@
     padding: 8px 0;
     margin-bottom: 24px; }
 
-.contact-group:last-child,
-.article-group:last-child {
-  border-bottom: 0; }
-
 .text-large {
   font-size: 18px; }
 

@@ -375,6 +375,10 @@
       border-right-color: #24a186;
       transition: all 180ms ease-in-out;
       text-decoration: none; }
+    .side-nav-menu a.disabled,
+    .side-nav-menu span.disabled {
+      cursor: not-allowed;
+      opacity: 0.75; }
   .side-nav-menu li:first-child a {
     border-top-right-radius: 4px; }
   .side-nav-menu li:last-child a {

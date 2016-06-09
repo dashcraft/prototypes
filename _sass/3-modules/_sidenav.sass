@@ -188,6 +188,9 @@
   .btn.btn-block
     +span(100%)
 
+  &.no-boder
+    border-bottom-color: transparent
+
 .ccc-page-header
   padding-bottom: 0
   .btn
@@ -195,6 +198,10 @@
     width: 100%
     padding: 8px 0
     +spacing()
+
+.article-group:first-child
+  border-top: 1px solid $apmex-lightGray
+  padding-top: $spacingBase
 
 // .contact-group:last-child,
 // .article-group:last-child

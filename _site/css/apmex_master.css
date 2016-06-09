@@ -373,7 +373,8 @@
     .side-nav-menu span.active {
       color: #24a186;
       border-right-color: #24a186;
-      transition: all 180ms ease-in-out; }
+      transition: all 180ms ease-in-out;
+      text-decoration: none; }
   .side-nav-menu li:first-child a {
     border-top-right-radius: 4px; }
   .side-nav-menu li:last-child a {
@@ -567,6 +568,10 @@
       .article-group .btn.btn-block {
         width: 100%;
         margin-left: 0; } }
+  .ccc-page-header.no-boder,
+  .contact-group.no-boder,
+  .article-group.no-boder {
+    border-bottom-color: transparent; }
 
 .ccc-page-header {
   padding-bottom: 0; }
@@ -575,6 +580,10 @@
     width: 100%;
     padding: 8px 0;
     margin-bottom: 24px; }
+
+.article-group:first-child {
+  border-top: 1px solid #dddddd;
+  padding-top: 24px; }
 
 .text-large {
   font-size: 18px; }

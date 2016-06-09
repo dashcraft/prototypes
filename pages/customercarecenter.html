@@ -51,7 +51,7 @@ active: ccchome
       <input type="text" class="form-control form-control-inline" placeholder="Your Email">
     </div>
     <div class="form-group">
-      <input type="phone" class="form-control form-control-inline" placeholder="Your Phone Number">
+      <input type="phone" class="form-control form-control-inline" placeholder="Your Phone Number (optional)">
       <input type="text" class="form-control form-control-inline" placeholder="Your account number (optional)">
     </div>
     <div class="form-group">
@@ -73,7 +73,7 @@ active: ccchome
       <textarea name="" id="" class="form-control" rows="3" placeholder="Your Message"></textarea>
     </div>
     <div class="form-group">
-      <input type="submit" class="btn btn-orange btn-block" value="submit">
+      <a type="submit" class="btn btn-orange btn-block" value="submit" data-toggle="modal" data-target="#modalConfirm">Submit</a>
     </div>
   </form>
 </section>
@@ -81,7 +81,7 @@ active: ccchome
 
   <div class="contact-group">
     <div class="span-6">
-      <h3>Payments By Mail:</h3>
+      <h3>Mail Check Payments:</h3>
       <address>
         <strong>APMEX, Inc.</strong><br>
         Attention: Payment Processing <br>
@@ -89,22 +89,22 @@ active: ccchome
         Oklahoma City, OK 73126-9073
       </address>
     </div>
-    <div class="span-6">
+    <!-- <div class="span-6">
       <h3>Office Location:</h3>
       <strong>APMEX, Inc.</strong> <br>
       226 Dean A. McGee Ave <br>
       Oklahoma City, OK 73126
-    </div>
+    </div> -->
   </div>
 
   <div class="contact-group text-large">
     <div class="span-6">
       <h3>Contact Via Email:</h3>
-      <a href="mailto:customerservice@apmex.com">customerservice@apmex.com</a>
+      <a href="mailto:service@apmex.com">service@apmex.com</a>
     </div>
     <div class="span-6">
       <h3>Live Chat:</h3>
-      <a href="#" class="btn btn-green btn-block" style="margin-left: 0">Chat Live Now</a>
+      <a href="#" class="btn btn-green btn-block" id="chatBtn" style="margin-left: 0">Chat Live Now</a>
     </div>
   </div>
 
@@ -128,4 +128,77 @@ active: ccchome
     </div>
   </div>
 
+  <div class="contact-group">
+    <div class="span-6">
+      <h3>Office Location:</h3>
+      <strong>APMEX, Inc.</strong> <br>
+      226 Dean A. McGee Ave <br>
+      Oklahoma City, OK 73126 <br>
+      <small><em>Visits by appointment only.</em></small>
+    </div>
+  </div>
+
+
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Service Form Successfully Submitted!</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          Thank you for using the APMEX Customer Care Center for assistance. We have received your inquiry and will respond as soon as possible. If you are contacting us Sunday – Thursday, you can expect to receive a reply before the end of the next business day, at the very latest.
+          <br>
+          <br>
+          APMEX is closed on weekends, so inquiries not responded to by 6 p.m. (ET) Friday, or submitted Saturday, will be answered the following Monday unless it is a holiday.
+          <br>
+          <br>
+          We value your business and we thank you for choosing APMEX!
+          <br>
+          <br>
+          <strong>APMEX Customer Service Hours:</strong><br>
+          8 a.m. – 8 p.m. (ET) Monday – Thursday <br>
+          8 a.m. – 6 p.m. (ET) Friday <br>
+          Closed on weekends and holidays
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var $theTime = $('#theTime');
+    var $button = $('#chatBtn');
+    var minTime = 1; //5pm
+    var maxTime = 14; //9am
+
+    setTime();
+    setButtonEnabled();
+    setInterval(setTime, 60000); //This isn't really needed, just for updating the current time
+    setInterval(setButtonEnabled, 30000); //Updates the button status every 30 seconds (30000 ms), really dumb but a lot easier than figuring out how much time until it should actually be changed
+
+    function setButtonEnabled() {
+      var date = new Date();
+      var hour = date.getUTCHours();
+
+      if (!(hour >= minTime && hour < maxTime)) { //If the hour is not between 5pm and 9am
+        $button.addClass('enabled').removeClass('disabled');
+
+      } else {
+        $button.addClass('disabled').removeClass('enabled');
+      }
+    }
+
+    function setTime() {
+      var date = new Date();
+      var minute = date.getMinutes();
+      var time = date.getHours() + ":" + (minute < 10 ? '0' + minute : minute);
+      $theTime.html(time)
+    }
+  });
+</script>

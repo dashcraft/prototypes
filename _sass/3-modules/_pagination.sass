@@ -1,0 +1,61 @@
+// Pagination
+// = = = = = = = = = = = = = = = = = //
+// APMEX - Stewart Hines | June 2016
+// = = = = = = = = = = = = = = = = = //
+
+/*/ = = = = 1. Pagination Block Reset = = = = /*/
+/* Make the Pagination a container */
+.pagination-block
+  +section()
+  +group()
+  margin: 0
+  padding: 0
+
+/*/ = = = = 2. Pagination UL = = = = /*/
+.pagination-block .pagination
+  float: none
+  display: block
+  text-align: center
+  margin: 0 auto
+  /*/ = = = = 2.A Responsive Pagination = = = = /*/
+  @media screen and (max-width:500px)
+    margin: 0 auto
+    text-align: center
+/*/ = = = = 3. Pagination List Items = = = = /*/
+.pagination-block .pagination li
+  display: inline
+// = = = = 4. Pagination Links = = = = //
+.pagination-block .pagination li
+  a
+    display: inline-block !important
+    max-height: 48px
+    max-width: 48px
+    padding: 6px 12px !important
+    color: $apmex-darkGray !important
+    vertical-align: middle
+    transition: color 180ms ease-in-out
+  /*/ == 4.A Links Active ==/*/
+  &.active
+    a
+      background: transparent !important
+      border-width: 1px
+      border-color: transparent !important
+      // border-color: $apmex-green !important
+      // color: $apmex-green !important
+      color: white !important
+      background: $apmex-green !important
+      transition: color 180ms ease-in-out
+  /*/ == 4.B Links First / Last ==/*/
+  &:first-child a,
+  &:last-child a
+    color: $apmex-green !important
+    transition: color 180ms ease-in-out
+    border-color: $apmex-green
+/*/ == 4.C Item Hovert ==/*/
+.pagination-block .pagination
+  a:hover,
+  li:first-child:hover a,
+  li:last-child:hover a
+    color: $apmex-green !important
+    transition: all 180ms ease-in-out
+    background: #f0f0f0 !important

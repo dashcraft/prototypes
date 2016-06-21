@@ -1,3 +1,4 @@
+/* = = = = Grid = = = = */
 .section {
   clear: both;
   padding: 0px;
@@ -212,6 +213,7 @@
       width: 100%;
       margin-left: 0; } }
 
+/* = = = = /Grid = = = = */
 .test .span-1,
 .test .span-2,
 .test .span-3,
@@ -244,6 +246,9 @@
 
 .spacing-base {
   margin-bottom: 12px; }
+
+.spacing-md {
+  margin-bottom: 24px; }
 
 .accordion {
   font-size: 14px;
@@ -298,6 +303,7 @@
     color: #f98d29;
     text-decoration: none; }
 
+/* = = = = SideNav = = = = */
 .has-side-nav {
   clear: both;
   padding: 0px;
@@ -626,3 +632,103 @@
   .glossary-list dd:after {
     border-bottom: 1px solid #C3C3C3;
     padding-top: 10px; }
+
+/*/ = = = = 1. Pagination Block Reset = = = = / */
+/* Make the Pagination a container */
+.pagination-block {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  max-width: 1000px;
+  zoom: 1;
+  margin: 0;
+  padding: 0; }
+  .pagination-block:before, .pagination-block:after {
+    content: "";
+    display: table; }
+  .pagination-block:after {
+    clear: both; }
+
+/*/ = = = = 2. Pagination UL = = = = / */
+.pagination-block .pagination {
+  float: none;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  /*/ = = = = 2.A Responsive Pagination = = = = / */ }
+  @media screen and (max-width: 500px) {
+    .pagination-block .pagination {
+      margin: 0 auto;
+      text-align: center; } }
+
+/*/ = = = = 3. Pagination List Items = = = = / */
+.pagination-block .pagination li {
+  display: inline; }
+
+.pagination-block .pagination li {
+  /*/ == 4.A Links Active ==/ */
+  /*/ == 4.B Links First / Last ==/ */ }
+  .pagination-block .pagination li a {
+    display: inline-block !important;
+    max-height: 48px;
+    max-width: 48px;
+    padding: 6px 12px !important;
+    color: #878787 !important;
+    vertical-align: middle;
+    transition: color 180ms ease-in-out; }
+  .pagination-block .pagination li.active a {
+    background: transparent !important;
+    border-width: 1px;
+    border-color: transparent !important;
+    color: white !important;
+    background: #24a186 !important;
+    transition: color 180ms ease-in-out; }
+  .pagination-block .pagination li:first-child a, .pagination-block .pagination li:last-child a {
+    color: #24a186 !important;
+    transition: color 180ms ease-in-out;
+    border-color: #24a186; }
+
+/*/ == 4.C Item Hovert ==/ */
+.pagination-block .pagination a:hover,
+.pagination-block .pagination li:first-child:hover a,
+.pagination-block .pagination li:last-child:hover a {
+  color: #24a186 !important;
+  transition: all 180ms ease-in-out;
+  background: #f0f0f0 !important; }
+
+/* = = = LP Item = = = */
+.lp-btn {
+  background: #f98d29; }
+
+.lp-item-img {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+.lp-item-name {
+  color: #002539;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center; }
+
+.lp-item-cta {
+  text-align: center; }
+  .lp-item-cta .btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #f98d29; }
+
+/* = =  LP Carousel = = */
+.lp-carousel {
+  position: relative; }
+  .lp-carousel .carousel-indicators {
+    bottom: 0; }
+    .lp-carousel .carousel-indicators .thumb {
+      display: none;
+      visibility: hidden;
+      background: red; }
+
+.test {
+  background: yellow; }

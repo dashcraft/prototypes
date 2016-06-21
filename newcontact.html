@@ -1,6 +1,4 @@
----
-layout: default
----
+
 <style media="screen">
         /* = = = = Grid = = = = */
 
@@ -2382,21 +2380,21 @@ layout: default
 <script type="text/javascript">
   $(document).ready(function() {
 
-    // $('.side-nav-menu-target').on('click', function() {
-    //   var $menuTarget = $('.side-nav-menu-target');
-    //   var $subMenu = $('.side-nav-sub-menu');
-    //   var $this = $(this);
-    //   // Remove Classes Globaly to close all the drawers
-    //   var isActive = $this.hasClass('active');
-    //   $menuTarget.removeClass('active');
-    //   $subMenu.removeClass('show');
-    //
-    //   if (!isActive) {
-    //     // Toggle Classes on clicked element
-    //     $this.toggleClass('active');
-    //     $this.next($subMenu).toggleClass('show');
-    //   }
-    // });
+    $('.side-nav-menu-target').on('click', function() {
+      var $menuTarget = $('.side-nav-menu-target');
+      var $subMenu = $('.side-nav-sub-menu');
+      var $this = $(this);
+      // Remove Classes Globaly to close all the drawers
+      var isActive = $this.hasClass('active');
+      $menuTarget.removeClass('active');
+      $subMenu.removeClass('show');
+
+      if (!isActive){
+        // Toggle Classes on clicked element
+        $this.toggleClass('active');
+        $this.next($subMenu).toggleClass('show');
+      }
+    });
 
     var $theTime = $('#theTime');
     var $button = $('#chatBtn');

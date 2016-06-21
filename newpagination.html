@@ -1,0 +1,116 @@
+<!-- New Pagination -->
+<!-- Stewart Hines | June 2016 -->
+<!-- Just a restyle of what was already there. -->
+<!-- Styles -->
+<style>
+  /*/ = = = = 1. Pagination Block Reset = = = = / */
+  /* Make the Pagination a container */
+  .pagination-block {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-width: 1000px;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagination-block:before,
+  .pagination-block:after {
+    content: "";
+    display: table;
+  }
+
+  .pagination-block:after {
+    clear: both;
+  }
+  /*/ = = = = 2. Pagination UL = = = = / */
+
+  .pagination-block .pagination {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    /*/ = = = = 2.A Responsive Pagination = = = = / */
+  }
+
+  @media screen and (max-width: 500px) {
+    .pagination-block .pagination {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  /*/ = = = = 3. Pagination List Items = = = = / */
+
+  .pagination-block .pagination li {
+    display: inline;
+  }
+
+  .pagination-block .pagination li a {
+    display: inline-block !important;
+    max-height: 48px;
+    max-width: 48px;
+    padding: 6px 12px !important;
+    color: #878787 !important;
+    vertical-align: middle;
+    transition: color 180ms ease-in-out;
+  }
+
+  .pagination-block .pagination li.active a {
+    background: transparent !important;
+    border-width: 1px;
+    border-color: transparent !important;
+    color: white !important;
+    background: #24a186 !important;
+    transition: color 180ms ease-in-out;
+  }
+
+  .pagination-block .pagination li:first-child a,
+  .pagination-block .pagination li:last-child a {
+    color: #24a186 !important;
+    transition: color 180ms ease-in-out;
+    border-color: #24a186;
+  }
+  /*/ == 4.C Item Hovert ==/ */
+
+  .pagination-block .pagination a:hover,
+  .pagination-block .pagination li:first-child:hover a,
+  .pagination-block .pagination li:last-child:hover a {
+    color: #24a186 !important;
+    transition: all 180ms ease-in-out;
+    background: #f0f0f0 !important;
+  }
+</style>
+<!-- Markup -->
+<div class="content-block footer-block">
+  <nav class="pagination-block">
+    <ul class="pagination">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&#10094;</span>
+        </a>
+      </li>
+      <!-- Active Class on the <li> sets the item to active -->
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <!-- Indicator that there are more pages -->
+      <!-- <li>
+        <a href="#">...</a>
+      </li> -->
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&#10095;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -5,7 +5,7 @@
 <style>
   /*/ = = = = 1. Pagination Block Reset = = = = / */
   /* Make the Pagination a container */
-  .pagination-block {
+ #new-pagination .pagination-block {
     clear: both;
     padding: 0px;
     margin: 0px;
@@ -16,18 +16,18 @@
     padding: 0;
   }
 
-  .pagination-block:before,
-  .pagination-block:after {
+  #new-pagination .pagination-block:before,
+  #new-pagination .pagination-block:after {
     content: "";
     display: table;
   }
 
-  .pagination-block:after {
+  #new-pagination .pagination-block:after {
     clear: both;
   }
   /*/ = = = = 2. Pagination UL = = = = / */
 
-  .pagination-block .pagination {
+  #new-pagination .pagination-block .pagination {
     float: none;
     display: block;
     text-align: center;
@@ -36,18 +36,18 @@
   }
 
   @media screen and (max-width: 500px) {
-    .pagination-block .pagination {
+    #new-pagination .pagination-block .pagination {
       margin: 0 auto;
       text-align: center;
     }
   }
   /*/ = = = = 3. Pagination List Items = = = = / */
 
-  .pagination-block .pagination li {
+  #new-pagination .pagination-block .pagination li {
     display: inline;
   }
 
-  .pagination-block .pagination li a {
+  #new-pagination .pagination-block .pagination li a {
     display: inline-block !important;
     max-height: 48px;
     max-width: 48px;
@@ -55,9 +55,10 @@
     color: #878787 !important;
     vertical-align: middle;
     transition: color 180ms ease-in-out;
+    border-radius:0px;
   }
 
-  .pagination-block .pagination li.active a {
+  #new-pagination .pagination-block .pagination li.active a {
     background: transparent !important;
     border-width: 1px;
     border-color: transparent !important;
@@ -66,17 +67,18 @@
     transition: color 180ms ease-in-out;
   }
 
-  .pagination-block .pagination li:first-child a,
-  .pagination-block .pagination li:last-child a {
+ #new-pagination  .pagination-block .pagination a[title="Previous"],
+ #new-pagination  .pagination-block .pagination a[title="Next"] {
     color: #24a186 !important;
     transition: color 180ms ease-in-out;
-    border-color: #24a186;
+   /* border-color: #24a186;  */
+    text-decoration:underline;
   }
   /*/ == 4.C Item Hovert ==/ */
 
-  .pagination-block .pagination a:hover,
-  .pagination-block .pagination li:first-child:hover a,
-  .pagination-block .pagination li:last-child:hover a {
+ #new-pagination  .pagination-block .pagination a:hover,
+ #new-pagination  .pagination-block .pagination li:hover a[title="Previous"], 
+ #new-pagination .pagination-block .pagination li:hover a[title="Next"] {
     color: #24a186 !important;
     transition: all 180ms ease-in-out;
     background: #f0f0f0 !important;
